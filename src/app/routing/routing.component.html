@@ -1,0 +1,6 @@
+<nav>
+    <a (click)="navigateTo('')" routerLinkActive="active">Home</a>
+    <a (click)="navigateTo('cart')" routerLinkActive="active">Cart</a>
+  </nav>
+  <ng-container *ngComponentOutlet="currentComponent"></ng-container>
+  

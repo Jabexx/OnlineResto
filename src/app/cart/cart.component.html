@@ -1,0 +1,24 @@
+<div *ngFor="let item of cartItems">
+    <img [src]="item.product.image" alt="{{item.product.name}}" />
+    <div class="cart-item-info">
+      <h2>{{item.product.name}} <span class="quantity" *ngIf="item.quantity > 1">({{item.quantity}}x)</span></h2>
+      <p>Price: ${{item.product.price}}</p>
+    </div>
+  </div>
+  <div>
+    <h3>Total: ${{ getTotalPrice() }}</h3>
+    <button (click)="checkout()">Checkout</button>
+  </div>
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+  </html>

@@ -1,0 +1,10 @@
+body{
+    height: 50vh;
+}
+
+.quantity {
+    font-size: 50px;
+    margin-left: 5px;
+    width: fit-content;
+  }
+  
